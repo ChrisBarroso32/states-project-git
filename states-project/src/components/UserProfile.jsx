@@ -1,6 +1,8 @@
-import { useState } from 'react' 
+import { useContext } from 'react' 
+import { UserContext } from '../contexts/user-context-provider.jsx';
 
-const UserProfile = () => {
+export const UserProfile = () => {
+    const {user, login, logout} = useContext(UserContext);
     // Reacreación de estados en el componente
     /*const [user, setUser] = useState(null);
     
