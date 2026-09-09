@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 const UserProfile = () => {
     // Reacreación de estados en el componente
-    const [user, setUser] = useState(null);
+    /*const [user, setUser] = useState(null);
     
     const login = () => {
         setUser({name: "Chris", email: "chris@example.com"})
@@ -10,7 +10,7 @@ const UserProfile = () => {
 
     const logout = () => {
         setUser(null)
-    };
+    };*/
 
     return (
         <div>
