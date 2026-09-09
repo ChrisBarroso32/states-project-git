@@ -1,8 +1,12 @@
 import { useContext } from 'react' 
 import { UserContext } from '../contexts/user-context-provider.jsx';
+import { useUserStore } from '../zustand/useUserStore.js';
 
 export const UserProfile = () => {
-    const {user, login, logout} = useContext(UserContext);
+    // Estados globales con useContext
+    // const {user, login, logout} = useContext(UserContext);
+    const {user, login, logout} = useUserStore();
+    
     // Reacreación de estados en el componente
     /*const [user, setUser] = useState(null);
     
